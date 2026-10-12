@@ -1,11 +1,26 @@
+body{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
 #calculator{
     font-family: Arial, sans-serif;
-    background-color: hsl(0, 0, 15);
+    background-color: hsl(0, 0%, 1%);
     border-radius: 15px;
     max-width: 500px;
-    overflow: ;
+    overflow: hidden;
 }
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 3%, 18%);
+    color: white;
 
+}
 #keys{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -18,9 +33,24 @@ button{
     height: 100px;
     border-radius: 50px;
     border: none;
-    background-color: hsl(115, 66%, 63%);
+    background-color: hsl(0, 0%, 8%);
     color: white; 
     font-size: 3rem;
     font-weight: bold;
     cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color:  hsl(0, 0%, 50%);
+}
+.operator_btn{
+    background-color: hsl(35, 100%, 55%);
+}
+.operator_btn:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operator_btn:active{
+    background-color: hsl(35, 100%, 75%);
 }
